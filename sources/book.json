@@ -1,0 +1,241 @@
+{
+  "title": "The Screwtape Letters",
+  "author": "by C. S. Lewis",
+  "eyebrow": "Faith Promise · Audiobook",
+  "audioBase": "https://s3.us-west-2.amazonaws.com/faithpromise.org/audio-files/Screwtape%20Letters/",
+  "chapters": [
+    {
+      "title": "An Introduction",
+      "eyebrow": "Introduction",
+      "num": null,
+      "audio": "an_introduction.mp3",
+      "text": "intro.html",
+      "format": "html"
+    },
+    {
+      "title": "Preface",
+      "eyebrow": "Front Matter",
+      "num": null,
+      "audio": "chapter_00.mp3",
+      "text": "preface.html",
+      "format": "html"
+    },
+    {
+      "title": "Letter I",
+      "num": 1,
+      "audio": "chapter_01.mp3",
+      "text": "letters/chapter_01.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter II",
+      "num": 2,
+      "audio": "chapter_02.mp3",
+      "text": "letters/chapter_02.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter III",
+      "num": 3,
+      "audio": "chapter_03.mp3",
+      "text": "letters/chapter_03.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter IV",
+      "num": 4,
+      "audio": "chapter_04.mp3",
+      "text": "letters/chapter_04.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter V",
+      "num": 5,
+      "audio": "chapter_05.mp3",
+      "text": "letters/chapter_05.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter VI",
+      "num": 6,
+      "audio": "chapter_06.mp3",
+      "text": "letters/chapter_06.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter VII",
+      "num": 7,
+      "audio": "chapter_07.mp3",
+      "text": "letters/chapter_07.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter VIII",
+      "num": 8,
+      "audio": "chapter_08.mp3",
+      "text": "letters/chapter_08.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter IX",
+      "num": 9,
+      "audio": "chapter_09.mp3",
+      "text": "letters/chapter_09.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter X",
+      "num": 10,
+      "audio": "chapter_10.mp3",
+      "text": "letters/chapter_10.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XI",
+      "num": 11,
+      "audio": "chapter_11.mp3",
+      "text": "letters/chapter_11.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XII",
+      "num": 12,
+      "audio": "chapter_12.mp3",
+      "text": "letters/chapter_12.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XIII",
+      "num": 13,
+      "audio": "chapter_13.mp3",
+      "text": "letters/chapter_13.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XIV",
+      "num": 14,
+      "audio": "chapter_14.mp3",
+      "text": "letters/chapter_14.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XV",
+      "num": 15,
+      "audio": "chapter_15.mp3",
+      "text": "letters/chapter_15.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XVI",
+      "num": 16,
+      "audio": "chapter_16.mp3",
+      "text": "letters/chapter_16.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XVII",
+      "num": 17,
+      "audio": "chapter_17.mp3",
+      "text": "letters/chapter_17.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XVIII",
+      "num": 18,
+      "audio": "chapter_18.mp3",
+      "text": "letters/chapter_18.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XIX",
+      "num": 19,
+      "audio": "chapter_19.mp3",
+      "text": "letters/chapter_19.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XX",
+      "num": 20,
+      "audio": "chapter_20.mp3",
+      "text": "letters/chapter_20.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXI",
+      "num": 21,
+      "audio": "chapter_21.mp3",
+      "text": "letters/chapter_21.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXII",
+      "num": 22,
+      "audio": "chapter_22.mp3",
+      "text": "letters/chapter_22.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXIII",
+      "num": 23,
+      "audio": "chapter_23.mp3",
+      "text": "letters/chapter_23.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXIV",
+      "num": 24,
+      "audio": "chapter_24.mp3",
+      "text": "letters/chapter_24.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXV",
+      "num": 25,
+      "audio": "chapter_25.mp3",
+      "text": "letters/chapter_25.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXVI",
+      "num": 26,
+      "audio": "chapter_26.mp3",
+      "text": "letters/chapter_26.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXVII",
+      "num": 27,
+      "audio": "chapter_27.mp3",
+      "text": "letters/chapter_27.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXVIII",
+      "num": 28,
+      "audio": "chapter_28.mp3",
+      "text": "letters/chapter_28.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXIX",
+      "num": 29,
+      "audio": "chapter_29.mp3",
+      "text": "letters/chapter_29.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXX",
+      "num": 30,
+      "audio": "chapter_30.mp3",
+      "text": "letters/chapter_30.txt",
+      "format": "letter"
+    },
+    {
+      "title": "Letter XXXI",
+      "num": 31,
+      "audio": "chapter_31.mp3",
+      "text": "letters/chapter_31.txt",
+      "format": "letter"
+    }
+  ]
+}
