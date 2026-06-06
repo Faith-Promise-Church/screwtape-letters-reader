@@ -15,8 +15,10 @@ screwtape-reader/
     letters/
       chapter_01.txt ...   One clean text file per letter (Letters I through XXXI)
     audio_links.csv        Reference list of the original audio filenames and URLs
+  index.html               The built reader at the repo root, for GitHub Pages. Generated. Do not hand-edit.
   dist/
-    screwtape-reader.html  The built file you deploy. Generated. Do not hand-edit.
+    screwtape-reader.html  The same built reader, for the S3 deploy. Generated. Do not hand-edit.
+  .nojekyll                Tells GitHub Pages to serve files as-is, with no Jekyll processing.
   CHANGELOG.md             Record of the proofreading edits made to the source text
   CLAUDE.md                Orientation for working in Claude Code
 ```
@@ -31,7 +33,7 @@ Python 3.8 or newer. Nothing to install. The build uses only the standard librar
 python build.py
 ```
 
-This reads `sources/book.json`, pulls in each chapter's text, formats the letters, injects everything into `template.html`, and writes `dist/screwtape-reader.html`. To preview, open that file in any browser.
+This reads `sources/book.json`, pulls in each chapter's text, formats the letters, injects everything into `template.html`, and writes the reader to two places: `dist/screwtape-reader.html` for the S3 deploy and `index.html` at the repo root for GitHub Pages. Both files are identical. To preview, open either in any browser.
 
 ## Editing the content
 
@@ -41,7 +43,7 @@ This reads `sources/book.json`, pulls in each chapter's text, formats the letter
 
 **Titles, order, audio host, or the eyebrow labels.** Edit `sources/book.json`. Each chapter points to an audio filename and a text file. The full audio URL is `audioBase` plus the filename, so if the files ever move, change `audioBase` once.
 
-After any edit, run `python build.py` and commit the updated `dist/screwtape-reader.html`.
+After any edit, run `python build.py` and commit the updated `index.html` and `dist/screwtape-reader.html`.
 
 ## Deploy
 
@@ -62,7 +64,13 @@ Then embed it in Webflow with an HTML embed element:
         loading="lazy"></iframe>
 ```
 
-**Option B, GitHub Pages.** Turn on Pages for this repo and point it at the file, then iframe the Pages URL the same way. See the note below about keeping the repo private.
+**Option B, GitHub Pages.** Pages is already turned on for this repo, serving from the `main` branch root. Because the build writes `index.html` at the root, the site URL itself loads the reader:
+
+```
+https://faith-promise-church.github.io/screwtape-letters-reader/
+```
+
+Iframe that URL the same way as Option A. Every time you rebuild and push, Pages updates within a minute or two.
 
 ## Notes
 

@@ -16,6 +16,8 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 SRC  = os.path.join(ROOT, "sources")
 TPL  = os.path.join(ROOT, "template.html")
 OUT  = os.path.join(ROOT, "dist", "screwtape-reader.html")
+# Same reader copied to the repo root so GitHub Pages serves it at the site URL.
+INDEX = os.path.join(ROOT, "index.html")
 
 # salutation / signature styling for letters
 SAL = "letter-spacing:.1em;font-size:.8em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:1.7em"
@@ -82,7 +84,10 @@ def main():
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     open(OUT, "w", encoding="utf-8").write(out_html)
-    print("Built %s  (%d chapters, %.0f KB)" % (os.path.relpath(OUT, ROOT), len(chapters), len(out_html.encode()) / 1024))
+    open(INDEX, "w", encoding="utf-8").write(out_html)
+    kb = len(out_html.encode()) / 1024
+    print("Built %s  (%d chapters, %.0f KB)" % (os.path.relpath(OUT, ROOT), len(chapters), kb))
+    print("Built %s  (root copy for GitHub Pages)" % os.path.relpath(INDEX, ROOT))
 
 if __name__ == "__main__":
     main()
