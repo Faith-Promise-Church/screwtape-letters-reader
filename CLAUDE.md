@@ -46,7 +46,7 @@ If you write or revise reader-facing prose, such as the Introduction, follow the
 
 ## Open TODOs
 
-1. Two source spots need a print-copy check before fixing. See `CHANGELOG.md`: Letter XX "ratio-circle of the eye" and Letter XVI "other un-essentials".
+1. Text was proofread against an online edition (see `CHANGELOG.md`, second pass). The two old print-check spots are resolved (Letter XX "rôle of the eye", Letter XVI "unessentials"). Two judgment calls remain open: the editorial gloss "[skin disease]" in Letter XXXI, and the degree abbreviations in Letter XXII's signature.
 2. Confirm the S3 audio objects are public read so the live embed plays. The player surfaces a test link when a track fails.
 3. Optional: true word-level read-along highlighting would need per-line or per-word timing data, which does not exist yet.
 
