@@ -47,8 +47,13 @@ If you write or revise reader-facing prose, such as the Introduction, follow the
 ## Open TODOs
 
 1. Text was proofread against an online edition (see `CHANGELOG.md`, second pass). All spots are resolved, including the two old print-check items (Letter XX "rôle of the eye", Letter XVI "unessentials"). Note one intentional editorial gloss kept in Letter XXXI: "tetter [skin disease]".
-2. Confirm the S3 audio objects are public read so the live embed plays. The player surfaces a test link when a track fails.
-3. Optional: true word-level read-along highlighting would need per-line or per-word timing data, which does not exist yet.
+2. S3 audio is confirmed public-read (June 2026). All 33 objects return 200/206 as `audio/mp3`, so the embed plays. Nothing to do here.
+3. Audio out of sync with the corrected text. The narration was generated (ElevenLabs) from the pre-correction scan, verified by transcription. Three chapters say the old wording and should be regenerated and re-uploaded to S3 with the same voice:
+   - **Letter XX** (`chapter_20.mp3`): says "ratio circle of the eye"; text now "rôle of the eye". Audible, must redo.
+   - **Letter XXI** (`chapter_21.mp3`): says "a time with the friend"; text now "a tête-à-tête with the friend". Should redo.
+   - **Letter I** (`chapter_01.mp3`): says "naive"; text now "naïf". Subtle, optional.
+   The other text fixes (façade, unessentials, naïvely, naïvety, the paragraph rejoins, the removed stray "!", spacing) do not change the spoken words, so their audio is fine as is.
+4. Optional: true word-level read-along highlighting would need per-line or per-word timing data, which does not exist yet.
 
 ## Deploy
 
