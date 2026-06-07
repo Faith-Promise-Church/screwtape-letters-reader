@@ -374,7 +374,9 @@ audio.addEventListener("canplay",clearWarn);
 audio.addEventListener("ended",()=>{ if($("autoAdvance").checked && idx<BOOK.chapters.length-1) openChapter(idx+1,true); });
 
 /* ---- scrubber ---- */
-audio.addEventListener("loadedmetadata",()=>{ $("durTime").textContent=fmt(audio.duration); });
+function showDuration(){ if(isFinite(audio.duration)&&audio.duration>0) $("durTime").textContent=fmt(audio.duration); }
+audio.addEventListener("loadedmetadata",showDuration);
+audio.addEventListener("durationchange",showDuration);
 audio.addEventListener("timeupdate",()=>{
   if(!dragging && audio.duration){ $("scrub").value=(audio.currentTime/audio.duration)*1000; $("curTime").textContent=fmt(audio.currentTime); }
   if(audio.currentTime>0){ mem.pos=mem.pos||{}; mem.pos[idx]=audio.currentTime; if(Math.floor(audio.currentTime)%4===0) save(mem); }
