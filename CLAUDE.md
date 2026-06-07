@@ -46,7 +46,7 @@ If you write or revise reader-facing prose, such as the Introduction, follow the
 
 ## Open TODOs
 
-1. Text was proofread against an online edition (see `CHANGELOG.md`, second pass). The two old print-check spots are resolved (Letter XX "rôle of the eye", Letter XVI "unessentials"). Two judgment calls remain open: the editorial gloss "[skin disease]" in Letter XXXI, and the degree abbreviations in Letter XXII's signature.
+1. Text was proofread against an online edition (see `CHANGELOG.md`, second pass). All spots are resolved, including the two old print-check items (Letter XX "rôle of the eye", Letter XVI "unessentials"). Note one intentional editorial gloss kept in Letter XXXI: "tetter [skin disease]".
 2. Confirm the S3 audio objects are public read so the live embed plays. The player surfaces a test link when a track fails.
 3. Optional: true word-level read-along highlighting would need per-line or per-word timing data, which does not exist yet.
 

@@ -43,10 +43,13 @@ Both were confirmed against the online edition and other sources, then fixed.
 - **Letter XX:** `ratio-circle of the eye` → `rôle of the eye`.
 - **Letter XVI:** `other un-essentials` → `other unessentials`.
 
-### Still open for a decision
+### Judgment calls (decided)
 
-- **Letter XXXI:** our copy carries an editorial gloss, `tetter [skin disease]`, that is not in Lewis's text. It may be a deliberate reader aid. Keep it or drop it.
-- **Letter XXII:** the signature reads `SCREWTAPE, T.E . . . B.S . . . etc.` The online edition prints the degrees as `T.E., B.S., etc.` Our spaced dots look like a scan artifact, but the exact punctuation varies by edition, so it was left as is pending a decision.
+- **Letter XXII:** signature `SCREWTAPE, T.E . . . B.S . . . etc.` → `SCREWTAPE, T.E., B.S., etc.` The spaced dots were a scan artifact; fixed to the standard degree punctuation.
+- **Letter XXXI:** the editorial gloss `tetter [skin disease]` is kept on purpose as a reader aid, even though it is not in Lewis's text.
+
+### Left unchanged
+
 - **Hyphenation variants** (e.g. `anti-climax`, `un-regularised`, `unselfconscious`, `two-pence`, `birth-right`, `un-rhythmical`, `out-manoeuvred`). Our copy and the online edition disagree on hyphens in a handful of words. Neither source is authoritative on hyphenation, so these were left unchanged.
 
 ## Player
