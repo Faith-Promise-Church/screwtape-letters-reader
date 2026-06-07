@@ -238,7 +238,7 @@
       "format": "letter"
     },
     {
-      "title": "A Note Before You Listen",
+      "title": "Preface to the Epilogue",
       "eyebrow": "Screwtape Proposes a Toast",
       "num": null,
       "audio": "scene_setter.mp3",
@@ -246,7 +246,7 @@
       "format": "html"
     },
     {
-      "title": "Screwtape Proposes a Toast",
+      "title": "Epilogue: Screwtape Proposes a Toast",
       "eyebrow": "An Address · 1959",
       "num": null,
       "audio": "toast.mp3",
