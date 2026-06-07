@@ -52,6 +52,45 @@ Both were confirmed against the online edition and other sources, then fixed.
 
 - **Hyphenation variants** (e.g. `anti-climax`, `un-regularised`, `unselfconscious`, `two-pence`, `birth-right`, `un-rhythmical`, `out-manoeuvred`). Our copy and the online edition disagree on hyphens in a handful of words. Neither source is authoritative on hyphenation, so these were left unchanged.
 
+## Third pass: spacing, line breaks, and PDF artifacts
+
+A mechanical sweep of all 31 letters for odd spacing, broken line wraps,
+misplaced punctuation, and invisible import junk. Findings were verified
+against the source text, and substantive ones against a clean independent
+edition (26reads), before editing.
+
+### Paragraphs rejoined (PDF page-break splits)
+
+The PDF page breaks had left 28 paragraphs split mid-sentence (one or two
+per letter), so a single sentence rendered as two paragraphs. Example,
+Letter I: `...the bus and the` + `newsboy) was enough...`. Each split was
+confirmed continuous against the clean edition and rejoined. The legitimate
+paragraph breaks in Letter XXII (`Music and silence...` and the editorial
+`[Here the MS. breaks off...]` line) were left as separate paragraphs.
+
+### Broken hyphenated words rejoined
+
+A stray space after a line-break hyphen had split five compounds:
+
+| Letter | Before | After |
+|--------|--------|-------|
+| VI | `anti- Christian` | `anti-Christian` |
+| XXII | `two- faced` | `two-faced` |
+| XXIII | `parade- ground` | `parade-ground` |
+| XXIV | `over- refined` | `over-refined` |
+| XXIX | `self- loathing` | `self-loathing` |
+
+### Punctuation
+
+- **Letter XXVIII:** `you tell me !with glee` → `you tell me with glee`. A stray exclamation mark from the scan (confirmed against a clean edition).
+- **Letter XXII:** `...is not music is silence”` → `...silence”.` Restored the missing sentence period.
+
+### Checked and left alone (not errors)
+
+- The comma endings before the signature (e.g. Letter III `...the Enemy's story,` then `Your affectionate uncle`) are authentic; the last line runs into the valediction. Confirmed against the clean edition.
+- `a No. 73 bus` (Letter I) and the numbered list `1. 2. 3. 4.` (Letter III) are correct.
+- No form-feeds, non-breaking spaces, soft hyphens, zero-width characters, tabs, double spaces, or straight-quote slips remain. Front matter (intro, preface) was clean.
+
 ## Player
 
 - Numbering aligned to the letters. Front matter is unnumbered. Letters are numbered 1 through 31 to match Letter I through Letter XXXI.
