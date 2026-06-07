@@ -60,6 +60,10 @@ def main():
     manifest = json.load(open(os.path.join(SRC, "book.json"), encoding="utf-8"))
     base = manifest["audioBase"]
 
+    notes_path = os.path.join(SRC, "notes.json")
+    notes = json.load(open(notes_path, encoding="utf-8")) if os.path.exists(notes_path) else {}
+    note_map = notes.get("notes", {})
+
     chapters = []
     for ch in manifest["chapters"]:
         text_path = os.path.join(SRC, ch["text"])
@@ -68,12 +72,15 @@ def main():
         entry = {"num": ch.get("num"), "title": ch["title"], "src": base + ch["audio"], "text": text}
         if ch.get("eyebrow"):
             entry["eyebrow"] = ch["eyebrow"]
+        if ch["audio"] in note_map:           # reader note, keyed by audio filename
+            entry["note"] = note_map[ch["audio"]]
         chapters.append(entry)
 
     book = {
         "eyebrow": manifest.get("eyebrow", ""),
         "title": manifest["title"],
         "author": manifest.get("author", ""),
+        "noteKey": notes.get("key"),
         "chapters": chapters,
     }
 
