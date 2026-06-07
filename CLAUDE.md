@@ -26,7 +26,7 @@ python build.py
 The build is standard library only. Keep it that way. Do not add dependencies or a package manager.
 
 This writes both `index.html` (root) and `dist/screwtape-reader.html`. After building, sanity check:
-- 33 chapters total (Introduction, Preface, Letters I through XXXI)
+- 35 chapters total (Introduction, Preface, Letters I through XXXI, the Toast setup note, and "Screwtape Proposes a Toast")
 - No form-feed characters in the output
 - `index.html` and `dist/screwtape-reader.html` are identical
 - The file opens and plays in a browser
@@ -47,13 +47,10 @@ If you write or revise reader-facing prose, such as the Introduction, follow the
 ## Open TODOs
 
 1. Text was proofread against an online edition (see `CHANGELOG.md`, second pass). All spots are resolved, including the two old print-check items (Letter XX "rôle of the eye", Letter XVI "unessentials"). Note one intentional editorial gloss kept in Letter XXXI: "tetter [skin disease]".
-2. S3 audio is confirmed public-read (June 2026). All 33 objects return 200/206 as `audio/mp3`, so the embed plays. Nothing to do here.
-3. Audio out of sync with the corrected text. The narration was generated (ElevenLabs) from the pre-correction scan, verified by transcription. Three chapters say the old wording and should be regenerated and re-uploaded to S3 with the same voice:
-   - **Letter XX** (`chapter_20.mp3`): says "ratio circle of the eye"; text now "rôle of the eye". Audible, must redo.
-   - **Letter XXI** (`chapter_21.mp3`): says "a time with the friend"; text now "a tête-à-tête with the friend". Should redo.
-   - **Letter I** (`chapter_01.mp3`): says "naive"; text now "naïf". Subtle, optional.
-   The other text fixes (façade, unessentials, naïvely, naïvety, the paragraph rejoins, the removed stray "!", spacing) do not change the spoken words, so their audio is fine as is.
-4. Optional: true word-level read-along highlighting would need per-line or per-word timing data, which does not exist yet.
+2. Audio re-recorded with ElevenLabs v3 (voice "SCREWTAPE", id DLBkD2Czx0wvq2FF6zXF), dramatic mood-mapped performance tags, matching the corrected text. The old S3 narration was generated from the pre-correction scan, so all letters were regenerated. Files (48 kbps mono, clean headers) live on the project drive at `v3_audio/`. The Preface audio is trimmed to start at "I have no intention..." (dedication and the Luther/More epigraphs omitted from audio only; still shown on screen).
+3. **Pending: upload the v3 audio to S3**, overwriting the `chapter_NN.mp3` keys (they inherit the bucket's public-read). New files to upload: `chapter_00.mp3`–`chapter_31.mp3`, plus `toast.mp3`. Still to be recorded by the team in the separate intro voice: `scene_setter.mp3` (script in `v3_sample/scene_setter_script.txt`). `an_introduction.mp3` is left as the original.
+4. "Screwtape Proposes a Toast" (1959 sequel) added as the final two chapters: a setup note (`scene_setter.mp3`, straight read) and the address itself (`toast.mp3`, oratorical v3). Source text in `sources/toast.html`; setup in `sources/scene_setter.html`.
+5. Optional: true word-level read-along highlighting would need per-line or per-word timing data, which does not exist yet.
 
 ## Deploy
 

@@ -236,6 +236,22 @@
       "audio": "chapter_31.mp3",
       "text": "letters/chapter_31.txt",
       "format": "letter"
+    },
+    {
+      "title": "A Note Before You Listen",
+      "eyebrow": "Screwtape Proposes a Toast",
+      "num": null,
+      "audio": "scene_setter.mp3",
+      "text": "scene_setter.html",
+      "format": "html"
+    },
+    {
+      "title": "Screwtape Proposes a Toast",
+      "eyebrow": "An Address · 1959",
+      "num": null,
+      "audio": "toast.mp3",
+      "text": "toast.html",
+      "format": "html"
     }
   ]
 }
