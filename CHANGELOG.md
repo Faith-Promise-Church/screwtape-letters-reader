@@ -91,6 +91,37 @@ A stray space after a line-break hyphen had split five compounds:
 - `a No. 73 bus` (Letter I) and the numbered list `1. 2. 3. 4.` (Letter III) are correct.
 - No form-feeds, non-breaking spaces, soft hyphens, zero-width characters, tabs, double spaces, or straight-quote slips remain. Front matter (intro, preface) was clean.
 
+## Fourth pass: independent-edition diff (shared-OCR errors)
+
+The earlier passes compared against an online edition that shared the
+same OCR lineage as our source PDF, so any error both inherited was
+invisible (a real word swapped for another real word). A reader caught
+one in Letter II ("I do **not** mean" had become "I do **riot** mean").
+To catch the rest, all 31 letters were diffed word-for-word against a
+clean independent edition (26reads), and every single-word swap was
+adjudicated in context.
+
+### Fixed (28 total)
+
+- **Letter II:** `riot` → `not` ("I do not mean the Church").
+- 26 more real scan swaps across Letters I, II, III, VII, X, XII, XIII,
+  XVI, XVII, XVIII, XIX, XXI, XXIV, XXV, XXX. Examples:
+  `guiding our patient` → `your patient`; `spread but through` →
+  `spread out through`; `they ore even` → `they are even`;
+  `bur patient` → `your patient`; `bring himself to teach` → `to preach`;
+  `demure little sign` → `sigh`; `He did not lay` → `say`;
+  `to cat the cake` → `to eat the cake`.
+
+### Left unchanged (ours is correct; the other edition was the outlier)
+
+- Letter XV: `other things being equal` (26reads has the typo "others").
+- Letter XXIII: `unbalanced` (standard spelling; 26reads "imbalanced").
+- `dullness` (Letters VIII, IX): modern spelling of the older "dulness".
+
+The v3 audio already reads all of these correctly (the model silently
+corrected the nonsense words during narration), so no re-record was
+needed for any of them.
+
 ## Player
 
 - Numbering aligned to the letters. Front matter is unnumbered. Letters are numbered 1 through 31 to match Letter I through Letter XXXI.
